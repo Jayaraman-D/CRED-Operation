@@ -30,7 +30,7 @@ function Cart() {
   const handleDeleteBtn = (id) => {
     console.log('deleten btn clicked');
     axios.delete(`http://localhost:3000/products/${id}`)
-      .then(() => console.log('product Deleted'))
+      // .then(() => console.log('product Deleted'))
       .then(setDeleted(!deleted))
       .catch((error) => console.error(error))
 

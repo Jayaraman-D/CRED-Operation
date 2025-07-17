@@ -50,7 +50,8 @@ function Create() {
           placeholder='Enter the product name'
           name='name'
           value={productName}
-          onChange={handleNameChange}
+          // onChange={handleNameChange}
+          onChange={(e)=>setProductName(e.target.value)}
           onKeyDown={handleKeyDown}
         />
 
